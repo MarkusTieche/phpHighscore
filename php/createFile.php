@@ -17,6 +17,6 @@ fclose($fh);
 
 chmod($fh, 0646);
 
-echo fileperms($fh)
+echo substr(sprintf('%o', fileperms("../json/".$name)), -4);
 
 ?>
