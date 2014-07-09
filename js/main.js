@@ -12,6 +12,7 @@ function createFile(text)
 		txtFile.onreadystatechange = function(data) {
   	if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     if (txtFile.status === 200) {  // Makes sure it's found the file.
+		console.log(txtFile.responseText)
     }
   }
 }
